@@ -1,0 +1,14 @@
+server {
+    listen 80;
+
+    server_name *.simonfong.me simonfong.me;
+
+    root /home/ubuntu/website;
+
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+
