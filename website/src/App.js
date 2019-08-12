@@ -1,8 +1,11 @@
 import React from 'react'
-import { Root, Routes, addPrefetchExcludes } from 'react-static'
+import { Root, Routes, addPrefetchExcludes, Head } from 'react-static'
 //
 import { Link, Router } from 'components/Router'
 import Dynamic from 'containers/Dynamic'
+
+// Files
+import favicon from './static/favicon.ico';
 
 import './app.css'
 
@@ -12,12 +15,10 @@ addPrefetchExcludes(['dynamic'])
 function App() {
   return (
     <Root>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/dynamic">Dynamic</Link>
-      </nav>
+      <Head>
+        <title>Simon Fong</title>
+        <link rel="icon" href={favicon}></link>
+      </Head>
       <div className="content">
         <React.Suspense fallback={<em>Loading...</em>}>
           <Router>
