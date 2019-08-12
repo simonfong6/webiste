@@ -1,0 +1,5 @@
+# Ignore development artifacts.
+
+website/artifacts/*
+website/tmp/*
+website/node_modules/.cache/*
