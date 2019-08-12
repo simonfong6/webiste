@@ -10,9 +10,6 @@ import ListGroupItem from 'react-bootstrap/ListGroupItem';
 // Custome Components
 import SocialIcon from '../components/SocialIcon'
 
-// Files
-import resume from '../static/resume.pdf';
-
 
 const dataSciencePresentationUrl = "https://docs.google.com/presentation/d/e/2PACX-1vS6ga2yJyG4DLHy3NqM45bMSaWShGB8QL8UWTp_AIHuywmi9bT1lAvE9VftSEF6QdJfw8IVJLOL5IXH/pub?start=false&loop=false&delayms=3000&slide=id.p1";
 
@@ -47,7 +44,7 @@ export default () => (
       />
       <SocialIcon
         icon="file"
-        link={resume}
+        link="/resume.pdf"
         tooltip="Resume"
       />
       <div class="card-deck">
