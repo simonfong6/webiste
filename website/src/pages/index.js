@@ -70,7 +70,7 @@ export default () => (
             />
             <SocialIcon
               icon="github-square"
-              link="https://github.com/simonfong6"
+              link="https://github.com/simonfong6/sad-score"
               tooltip="Code"
             />
           </Card.Body>
